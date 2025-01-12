@@ -1,0 +1,17 @@
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide *ngFor="let card of cards">
+    <div class="card">
+      <div class="card-image slide-in-top">
+        <img [src]="card.image" alt="Image 1" />
+      </div>
+      <div class="card-body">
+        <h4 class="slide-in-top">Try Our</h4>
+        <h2 class="slide-in-left">{{ card.title }}</h2>
+        <h6 class="slide-in-left">Replica of Blu de Chanel</h6>
+        <h5 class="slide-in-bottom">At 199/-</h5>
+        <p class="slide-in-right">{{ card.description }}</p>
+        <a class="slide-in-bottom">Buy Now</a>
+      </div>
+    </div>
+  </ng-template>
+</owl-carousel-o>

@@ -1,0 +1,376 @@
+.card-slider{
+    position: relative;
+}
+
+.banner{
+    background: url(/assets/home-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+.brand-name{
+    font-size: 0.7rem;
+    padding-bottom: 0.3rem;
+    font-family: cRegular;
+}
+
+.title{
+    line-height: 30px;
+    font-size: 2rem;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.desc{
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: cRegular;
+    padding-bottom: 1rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: cLight;
+    gap: 10px;
+    padding-bottom: 2rem;
+}
+
+.check-products{
+    padding: 11px 9px;
+    background: black;
+    border-radius: 2rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.check-products mat-icon{
+    font-size: 16px;
+    margin-bottom: -8px;
+}
+
+p {
+    margin: 0;
+}
+
+.play-vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: cRegular;
+}
+
+.play-vid mat-icon {
+    height: 26px;
+    width: 2rem;
+    font-size: 28px;
+}
+
+.detail-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;      
+    padding-bottom: 1.4rem;
+}
+
+.detail-list mat-icon{
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+.detail-list .detail-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.detail-text .top {
+    font-size: 1rem;
+}
+
+.detail-text .bottom {
+    font-family: cRegular;
+    font-size: 0.9rem;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+}
+
+.mid-content{
+    padding: 1rem;
+}
+
+.mid-content .brand-name {
+    font-family: cLight;
+}
+
+.mid-content .title {
+    font-weight: 1.5rem;
+}
+
+.mid-content .desc {
+    font-weight: 1rem;
+    font-family: cLight;
+}
+
+.mid-content .check-products{
+    color: #fff;
+    font-size: 14px;
+}
+
+.image {
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.bottom-text{
+    font-size: 0.9rem;
+    line-height: 19px;
+    padding-bottom: 1rem;
+    font-family: cRegular;
+}
+
+
+.explore-content .title{
+    line-height: 25px;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+.title span{
+    font-family: cRegular;
+}
+
+.explore-content .check-products{
+    color: #fff;
+    font-size: 0.8rem;
+    width: 5rem;
+}
+
+.active{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000 !important;
+}
+.explore-top{
+    padding: 1rem;
+}
+
+.product-banner{
+    padding-top: 10rem;
+}
+
+.product-banner .banner{
+    height: 30rem;
+}
+
+.product-banner .products-row {
+    margin-top: -14rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom: none;
+}
+
+.banner-2{
+    background: url(/assets/banner-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-2 .bottom-text{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-text .title{
+    width: 75%;
+    font-family: cLight;
+}
+
+.category-content{
+    padding: 1rem;
+    /* background: #acacac; */
+    background: radial-gradient(      circle,      rgba(52, 152, 219, 0.5) 50%,      rgba(52, 152, 219, 0) 100%);
+    margin-top: 12rem;
+}
+
+
+.card-banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    color: #fff;
+    gap: 5rem;
+    border-radius: 10px;
+    margin-top: -10rem;
+    z-index: 1;
+}
+
+.row-card{
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.card-banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    z-index: -1;
+    -webkit-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+
+.card-head{
+    font-size: 1.8rem;
+}
+
+.card-banner .top{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.card-desc{
+    font-size: 1rem;
+    font-family: cRegular;
+    line-height: 20px;
+}
+
+.category-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.category-top .check-products{
+   width: 10rem;
+    color: #fff;
+}
+
+.category-top .active{
+    background-color: transparent;
+    width: 5rem;
+}
+.category-top .btns{
+    padding-bottom: 1rem;
+}
+
+.about{
+    padding-top: 4rem;
+}
+
+.about .mid{
+    padding: 10px 0;
+}
+
+.about .top, .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+.about .title{
+    width: 100%;
+    font-size: 1.7rem;
+    line-height: 23px;
+}
+
+.about .desc{
+    font-size: 1rem;
+}
+
+.about .check-products{
+    color: #fff;
+    font-size: 0.9rem;
+    color: #fff;
+    width: 13rem;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+
+  .popup {
+    position: fixed; /* Fixes the popup relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align center perfectly */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+  }
+  
+  .popup mat-icon {
+    padding: 3px;
+    position: absolute; /* Positioned relative to the popup */
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer; /* Indicates it's clickable */
+  }
+  
+  .popup-content {
+    background: #fff; /* White background for the popup content */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Limit popup width for responsiveness */
+    max-height: 90%; /* Prevent the popup from exceeding the screen */
+    overflow: auto; /* Allow scrolling if content overflows */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add some shadow */
+  }
+  

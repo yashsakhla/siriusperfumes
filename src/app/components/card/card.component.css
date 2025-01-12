@@ -1,0 +1,212 @@
+.item-slider-container {
+    position: relative;
+    width: 100vw; /* Ensure the container is full width of the screen */
+    overflow: hidden; /* Hide overflow to only show one card at a time */
+  }
+  
+  .item-slider-container .item-title {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .item-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .item-slider .item-container {
+    display: flex;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensure smooth snapping between items */
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  .card {
+    width: 100vw; /* Make each card take up the full screen width */
+    max-width: 100%; /* Ensure cards don't exceed screen width */
+    height: 100%;
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    scroll-snap-align: center; /* Make cards snap to the center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  
+  .card-image {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .card-image img {
+    max-width: 16rem;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    width: 50%;
+    line-height: 22px;
+    font-family: cRegular;
+  }
+
+  .card-body h4 {
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    color: #ab8e66;
+  }
+
+  .card-body h6{
+    left: 1rem;
+    position: absolute;
+    top: 4.5rem;
+    font-family: cRegular;
+    margin: 2px;
+  }
+
+  .card-body h5{
+    left: 1rem;
+    position: absolute;
+    top: 55%;
+    color: #ab8e66;
+  }
+  
+  .card-body p {
+    top: 40%;
+    width: 35%;
+    font-size: 1rem;
+    color: #ab8e66;
+    position: absolute;
+    left: 15rem;
+  }
+  
+  .card-body a {
+    position: absolute;
+    left: 1rem;
+    top: 14rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slider-btn.left {
+    left: 10px;
+  }
+  
+  .slider-btn.right {
+    right: 10px;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-top {
+    animation: slideInTop 1s ease-out forwards;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+  
+  .slide-in-bottom {
+    animation: slideInBottom 0.7s ease-out forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }

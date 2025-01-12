@@ -1,0 +1,15 @@
+<mat-toolbar class="header-toolbar">
+    <span>SIRIUS <span class="small">PERFUMES</span> </span>
+    <button (click)="toggleSidenav()">
+        <mat-icon *ngIf="!isSidenavOpen">menu</mat-icon>
+        <mat-icon *ngIf="isSidenavOpen">close</mat-icon>
+      </button>
+  </mat-toolbar>
+  
+  <mat-sidenav-container [class.sidenav-container] = "isSidenavOpen">
+    <mat-sidenav #sidenav mode="side" [(opened)]="isSidenavOpen" class="sidenav">
+      <mat-nav-list>
+        <mat-list-item *ngFor="let i of matList" (click)="productRoute()"> <span>{{i}}</span> <mat-icon  class="black">arrow_right_alt</mat-icon> </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>

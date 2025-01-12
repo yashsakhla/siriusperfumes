@@ -1,0 +1,26 @@
+<div class="products-cat">
+    <div class="banner">
+        <div class="back-btn fade-in" (click)="backRoute()">
+            <mat-icon>arrow_back</mat-icon>
+            <p>Back to Home</p>
+        </div>
+        <div class="heading fade-in">
+            Top Selling Perfume
+        </div>
+    </div>
+    <div class="select-cat">
+        <div class="product-category fade-in">
+            <label for="cat-select">category:</label>
+            <select id="cat-select">
+              <option value="500g">Top Selling</option>
+              <option value="1kg">Trending</option>
+              <option value="2kg">Celebrity Perfumes</option>
+            </select>
+          </div>
+    </div>
+    <div class="products-list fade-in">
+        <div class="products" *ngFor="let product of products" appFadeInOnScroll>
+            <app-product-card></app-product-card>
+        </div>
+    </div>
+</div>

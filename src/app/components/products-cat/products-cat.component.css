@@ -1,0 +1,75 @@
+.banner{
+    background: #000;
+    color: #fff;
+    padding: 2rem 1.5rem;
+}
+
+.back-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    font-size: 0.9rem;
+}
+
+mat-icon{
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.heading{
+    font-size: 1.9rem;
+    padding: 10px 0;
+}
+
+.products-list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+select {
+    padding: 9px;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 75%;
+  }
+
+  .select-cat{
+    padding: 0 1rem;
+  }
+
+.products{
+    border-radius: 11px;
+    border: 2px solid black;
+}
+
+.product-category{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out forwards;
+  }

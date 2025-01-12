@@ -1,0 +1,263 @@
+<div class="home">
+    <div class="card-sliders">
+        <app-card></app-card>
+    </div>
+    <div class="main-content">
+        <div class="banner">
+            <div class="brand-name fade-in">
+                SIRIUS
+            </div>
+            <div class="title fade-in">
+                The World of Spray Techniques
+            </div>
+            <div class="desc fade-in">
+                The art of spray painting encapsulates an explosion of colors and creativity. With a swift movement, aerosol
+                cans release a fine mist that transforms ordinary surfaces into vibrant masterpieces.
+            </div>
+            <div class="btns fade-in">
+                <div class="check-products" (click)="routeProducts()">
+                    <p>check products</p>
+                    <mat-icon>shop</mat-icon>
+                </div>
+                <div class="play-vid" (click)="openVideoModal()">
+                    <mat-icon>play_circle_outline</mat-icon>
+                    <p>play video</p>
+                </div>
+            </div>
+            <div class="detail-list" appFadeInOnScroll>
+                <mat-icon>card_giftcard</mat-icon>
+                <div class="detail-text">
+                    <div class="top">
+                        Finished Products
+                    </div>
+                    <div class="bottom">
+                        Products and Gift Wrapping
+                    </div>
+                </div>
+            </div>
+            <div class="detail-list" appFadeInOnScroll>
+                <mat-icon>local_offer</mat-icon>
+                <div class="detail-text">
+                    <div class="top">
+                        Large and frequent
+                    </div>
+                    <div class="bottom">
+                        promotions with numerous discounts
+                    </div>
+                </div>
+            </div>
+            <div class="detail-list" appFadeInOnScroll>
+                <mat-icon>local_shipping</mat-icon>
+                <div class="detail-text">
+                    <div class="top">
+                        Free shipping
+                    </div>
+                    <div class="bottom">
+                        on any order from 199/-
+                    </div>
+                </div>
+            </div>
+    
+    
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let products of products">
+                    <div class="product-card" appFadeInOnScroll>
+                        <app-product-card></app-product-card>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    
+        <div class="mid-content">
+            <div class="brand-name" appFadeInOnScroll>
+                SIRIUS
+            </div>
+            <div class="title" appFadeInOnScroll>
+                The World of Spray Techniques
+            </div>
+            <div class="desc" appFadeInOnScroll>
+                The art of spray painting encapsulates an explosion of colors and creativity. With a swift movement, aerosol
+                cans release a fine mist that transforms ordinary surfaces into vibrant masterpieces.
+            </div>
+            <div class="btns" appFadeInOnScroll>
+                <div class="check-products">
+                    <p>Top Scent</p>
+                    <mat-icon>shop</mat-icon>
+                </div>
+                <div class="check-products">
+                    <p>Trending Scent</p>
+                    <mat-icon>shop</mat-icon>
+                </div>
+            </div>
+            <div class="image" appFadeInOnScroll>
+                <img src="assets/perfume-mid.webp" alt="perfume">
+            </div>
+            <div class="bottom-text" appFadeInOnScroll>
+                This precise application method ensures targeted coverage, safeguarding crops from pests, promoting growth,
+                and maximizing yields.
+            </div>
+            <div class="check-products" appFadeInOnScroll>
+                <p>Contact Now</p>
+                <mat-icon>chat</mat-icon>
+            </div>
+        </div>
+    
+        <div class="explore-content">
+            <div class="explore-top" appFadeInOnScroll>
+                <div class="title">
+                    Exploring the <br>
+                    <span>Versatility of Sprays</span>
+                </div>
+                <div class="btns" appFadeInOnScroll>
+                    <div class="check-products" [class.active]="active === 1" (click)="categoryChange(1)">
+                        <p>Signature</p>
+                    </div>
+                    <div class="check-products" [class.active]="active === 2" (click)="categoryChange(2)">
+                        <p>Top</p>
+                    </div>
+                    <div class="check-products" [class.active]="active === 3" (click)="categoryChange(3)">
+                        <p>Trending</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-banner">
+                <div class="banner banner-2">
+                    <div class="products-row">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-template carouselSlide *ngFor="let products of products">
+                                <div class="product-card" appFadeInOnScroll>
+                                    <app-product-card></app-product-card>
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                    <div class="bottom-text">
+                        <div class="brand-name" appFadeInOnScroll>
+                            SIRIUS
+                        </div>
+                        <div class="title" appFadeInOnScroll>
+                            The Science and Art of Sprays
+                        </div>
+                        <div class="desc" appFadeInOnScroll>
+                            The art of spray painting encapsulates an explosion of colors and creativity. With a swift
+                            movement, aerosol cans release a fine mist that transforms ordinary surfaces into vibrant
+                            masterpieces.
+                        </div>
+                        <div class="play-vid" appFadeInOnScroll (click)="openVideoModal()">
+                            <mat-icon>play_circle_outline</mat-icon>
+                            <p>play video</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="category-content">
+            <div class="card-banner" appFadeInOnScroll>
+                <img src="assets/card-banner-1.webp" alt="">
+                <div class="top">
+                    <div class="card-head">
+                        Trending
+                    </div>
+                    <div class="card-desc">
+                        On an everyday level, household products such as air fresheners, cleaners, and personal care items
+                        often utilize spray mechanisms for convenient and effective dispersal.
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="check-products active">
+                        <p>Check Products</p>
+                        <mat-icon>arrow_forward</mat-icon>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="category-top">
+                <div class="title" appFadeInOnScroll>
+                    The World of Spray Techniques
+                </div>
+                <div class="desc" appFadeInOnScroll>
+                    The art of spray painting encapsulates an explosion of colors and creativity. With a swift movement,
+                    aerosol cans release a fine mist that transforms ordinary surfaces into vibrant masterpieces.
+                </div>
+                <div class="btns" appFadeInOnScroll>
+                    <div class="check-products active">
+                        <p>Top Scent</p>
+                    </div>
+                    <div class="check-products active">
+                        <p>Trending Scent</p>
+                    </div>
+                    <div class="check-products active">
+                        <p>Top Scent</p>
+                    </div>
+                </div>
+                <div class="check-products" appFadeInOnScroll>
+                    <p>Check All</p>
+                    <mat-icon>arrow_forward</mat-icon>
+                </div>
+            </div>
+    
+            <div class="category-row" appFadeInOnScroll>
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let products of products">
+                        <div class="card-banner row-card">
+                            <img src="assets/card-banner-2.avif" alt="">
+                            <div class="top">
+                                <div class="card-head">
+                                    Trending
+                                </div>
+                                <div class="card-desc">
+                                    On an everyday level, household products such as air fresheners, cleaners, and personal care
+                                    items often utilize spray mechanisms for convenient and effective dispersal.
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="check-products active">
+                                    <p>Check Products</p>
+                                    <mat-icon>arrow_forward</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+    
+            <div class="about">
+                <div class="top">
+                    <div class="title" appFadeInOnScroll>
+                        Power, and Practicality <br>
+                        <span>Manufacturing Processes</span>
+                    </div>
+                    <div class="desc" appFadeInOnScroll>
+                        Sprays, in their multifaceted forms, represent a diverse range of applications across industries,
+                        sciences, arts, and daily life.
+                    </div>
+                    <div class="check-products" appFadeInOnScroll>
+                        <p>Check more products</p>
+                        <mat-icon>arrow_forward</mat-icon>
+                    </div>
+                </div>
+                <div class="mid" appFadeInOnScroll>
+                    <img src="assets/winter-perfume.webp" alt="winter">
+                </div>
+                <div class="bottom">
+                    <div class="title" appFadeInOnScroll>
+                        The Artistry of Atomization <br>
+                        <span>Diving into Spray </span>
+                    </div>
+                    <div class="desc" appFadeInOnScroll>
+                        The Artistry of Atomization: Diving into Spray Techniques
+                    </div>
+                    <div class="check-products" appFadeInOnScroll>
+                        <p>Check more products</p>
+                        <mat-icon>arrow_forward</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="showPopup">
+    <mat-icon  (click)="openVideoModal()">close</mat-icon>
+    <app-video-modal></app-video-modal>
+</div>
